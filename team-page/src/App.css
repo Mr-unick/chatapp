@@ -1,0 +1,196 @@
+.App {
+  text-align: center;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  padding: 20px;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* App.css */
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+/* Modal.css */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+height: 200px;
+width: 200px;
+  padding: 20px;
+border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.modal form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal button{
+  margin-top: 20px;
+  padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.app.blur {
+  filter: blur(2px);
+  pointer-events: none; /* Prevent interaction with the blurred content */
+}
+
+/* Add more styling as needed */
+
+.user-list {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.user-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.user-list li {
+  margin: 5px;
+
+}
+
+.chat-window {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto; /* Use 'auto' to show scrollbar only when needed */
+  height: 400px;
+}
+
+/* Hide scrollbar */
+.chat-window::-webkit-scrollbar {
+  width: 0.5em;
+  display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chat-window::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.sent {
+  width: 60%;
+  align-self: flex-end;
+  background-color: #629ef7;
+  margin-left: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.received {
+  width: 60%;
+ 
+  background-color: #EAEAEA;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex-grow: 1;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-box button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: #0056b3;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
